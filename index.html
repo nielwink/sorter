@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nielwink Sorter</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="header"></div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <table id="mainTable" align="center">
+          <tbody>
+            <tr>
+              <td id="battleNumber" colspan="3">
+                <b>Battle #1
+                  <br>0% sorted.</b>
+              </td>
+            </tr>
+            <tr>
+              <td id="leftField" class="field" onclick="if(finishFlag==0) sortList(-1);" rowspan="2"></td>
+              <td class="middleField field" onclick="if(finishFlag==0) sortList(0);">I like both</td>
+              <td id="rightField" class="field" onclick="if(finishFlag==0) sortList(1);" rowspan="2"></td>
+            </tr>
+            <tr>
+              <td class="middleField field" onclick="if(finishFlag==0) sortList(0);">
+                No opinion
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+        <div id="resultField"></div>
+        <br>
+        <br>
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" oninput="filterMoments(event)">
+        </div>
+        <br>
+        <ul id="filter" class="list-group">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    Created by <a href="https://twitter.com/himarisuu">himarisuu</a>
+    <br>
+    Code used from
+    <a href="https://github.com/produce48/produce48.github.io">produce48.github.io</a> and
+    <a href="http://biasorter.tumblr.com/">biasorter.tumblr.com</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

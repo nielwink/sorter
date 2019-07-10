@@ -1,0 +1,102 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  background-image: url('./assets/banner_text.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#footer {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#footer a {
+  color: #dc4b4c;
+}
+
+#footer a:hover {
+  color: #ff886c;
+}
+
+/* filter */
+
+#filter {
+  max-height: 480px;
+  overflow-y: scroll;
+}
+
+a.link {
+  color: #ff886c;
+}
+
+a.link.even {
+  color: #dc4b4c;
+}
+
+a.link:hover {
+  color: #ff886c;
+}
+
+tr td {
+  text-align: center;
+}
+
+.form-control:focus {
+  border-color: #dc4b4c !important;
+  box-shadow: 0 0 0 .2rem #ff886c !important;
+}
+
+/* sort */
+
+#battleNumber {
+  color: #dc4b4c;
+  padding-bottom: 10px;
+}
+
+#mainTable {
+  font-size: 19px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+}
+
+.field {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ff886c;
+  cursor: pointer;
+}
+
+.middleField {
+  height: 70px;
+}
+
+#resultField {
+  text-align: center;
+}
+
+#resultTable {
+  width: 200px;
+  font-size: 18px;
+  line-height: 120%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ff886c;
+  border-collapse: collapse
+}
+
+.resultHeader {
+  color: #be1931;
+  background-color: #ff886c;
+  text-align: center;
+}
